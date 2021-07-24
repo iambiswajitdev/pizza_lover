@@ -1,0 +1,39 @@
+@import "./global/colors";
+@import "./global/mixins";
+@import "./global/variables";
+* {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  width: 100%;
+  background-color: $backGroundColor;
+  @include paddingTopPropaty;
+}
+.manu {
+  @include allDesplayPropaty;
+  ul {
+    li {
+      display: inline-block;
+      a {
+        display: inline-block;
+        text-decoration: none;
+        text-align: center;
+        padding: 5px 15px;
+        text-transform: capitalize;
+        color: $manuTextColor;
+        font-weight: 500;
+      }
+    }
+  }
+}
+.logo {
+  img {
+    width: 30%;
+  }
+}
+.addCart {
+  background-color: $buttonBGColor;
+  color: $textColor !important;
+  border-radius: 5px;
+}

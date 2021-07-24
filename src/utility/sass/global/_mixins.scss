@@ -1,0 +1,8 @@
+@mixin paddingTopPropaty {
+  padding-top: 10px;
+}
+@mixin allDesplayPropaty {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
