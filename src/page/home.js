@@ -12,9 +12,7 @@ const Home = () => {
             <Banner />
           </Col>
         </Row>
-        <Row>
-          <MainProdact />
-        </Row>
+        <MainProdact />
       </Container>
     </div>
   );

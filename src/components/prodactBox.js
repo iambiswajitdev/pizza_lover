@@ -1,6 +1,7 @@
 import { Col, Row } from "react-bootstrap";
 
 const ProdactBox = ({ allProdact }) => {
+  console.log(allProdact);
   return (
     <>
       {allProdact.map((item, index) => (

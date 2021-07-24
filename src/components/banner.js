@@ -13,7 +13,7 @@ const Banner = () => {
           </div>
         </Col>
         <Col lg={6} className="mainImg">
-          <img src={pizzaImages} alt="" />
+          <img className="bannerImg" src={pizzaImages} alt="" />
         </Col>
       </Row>
     </div>
