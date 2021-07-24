@@ -6,3 +6,16 @@
   justify-content: flex-end;
   align-items: center;
 }
+@mixin buttonPropaty {
+  border-radius: 5px;
+  background-color: $buttonBGColor;
+  border: none;
+  color: $textColor;
+  padding: 5px 15px;
+  text-transform: capitalize;
+}
+@mixin titlePropaty {
+  font-size: 20px;
+  text-transform: capitalize;
+  text-align: center;
+}
