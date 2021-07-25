@@ -11,7 +11,9 @@ const NavBar = () => {
           <Row>
             <Col lg={3}>
               <div className="logo">
-                <img src={logoImages} alt="" />
+                <Link to="/">
+                  <img src={logoImages} alt="" />
+                </Link>
               </div>
             </Col>
             <Col lg={9}>

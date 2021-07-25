@@ -1,73 +1,29 @@
-import React from "react";
+//import React, { useState, useEffect } from "react";
 import { Col, Row } from "react-bootstrap";
+import { allProdact } from "../utility/commonStatickData";
 import ProdactBox from "./prodactBox";
 
 const MainProdact = () => {
-  const allProdact = [
-    {
-      _id: 12134646,
-      images: "https://pngimg.com/uploads/pizza/small/pizza_PNG44095.png",
-      title: "domenous",
-      catagory: "large",
-      price: 150,
-    },
-    {
-      _id: 25465655,
-      images: "https://pngimg.com/uploads/pizza/small/pizza_PNG44095.png",
-      title: "domenous",
-      catagory: "large",
-      price: 150,
-    },
-    {
-      _id: 965664446,
-      images: "https://pngimg.com/uploads/pizza/small/pizza_PNG44095.png",
-      title: "domenous",
-      catagory: "large",
-      price: 150,
-    },
-    {
-      _id: 656556565,
-      images: "https://pngimg.com/uploads/pizza/small/pizza_PNG44095.png",
-      title: "domenous",
-      catagory: "large",
-      price: 150,
-    },
-    {
-      _id: 10004423102425,
-      images: "https://pngimg.com/uploads/pizza/small/pizza_PNG44095.png",
-      title: "domenous",
-      catagory: "large",
-      price: 150,
-    },
-    {
-      _id: 5652523236,
-      images: "https://pngimg.com/uploads/pizza/small/pizza_PNG44095.png",
-      title: "domenous",
-      catagory: "large",
-      price: 150,
-    },
-    {
-      _id: 15522255555,
-      images: "https://pngimg.com/uploads/pizza/small/pizza_PNG44095.png",
-      title: "domenous",
-      catagory: "large",
-      price: 150,
-    },
-    {
-      _id: 3651225572552,
-      images: "https://pngimg.com/uploads/pizza/small/pizza_PNG44095.png",
-      title: "domenous",
-      catagory: "large",
-      price: 150,
-    },
-    {
-      _id: 12025800502,
-      images: "https://pngimg.com/uploads/pizza/small/pizza_PNG44095.png",
-      title: "domenous",
-      catagory: "large",
-      price: 150,
-    },
-  ];
+  // const [prodact, setprodact] = useState([]);
+
+  // const prodactData = async () => {
+  //   try {
+  //     const response = await fetch(
+  //       "https://order-pizza-api.herokuapp.com/api/swagger.json",
+  //       {
+  //         mode: "no-cors",
+  //       }
+  //     );
+  //     const actualData = await response.json();
+  //     setprodact(actualData);
+  //     console.log(actualData);
+  //   } catch {}
+  // };
+
+  // useEffect(() => {
+  //   prodactData();
+  // }, []);
+
   return (
     <>
       <div className="mainProdact">
@@ -81,7 +37,9 @@ const MainProdact = () => {
           </Col>
         </Row>
         <Row>
-          <ProdactBox allProdact={allProdact} />
+          {allProdact.map((allProdact) => (
+            <ProdactBox key={allProdact._id} allProdact={allProdact} />
+          ))}
         </Row>
       </div>
     </>

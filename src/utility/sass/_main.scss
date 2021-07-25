@@ -5,6 +5,10 @@
   margin: 0;
   padding: 0;
 }
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
 
 .header {
   width: 100%;
@@ -80,4 +84,24 @@
 }
 .bannerImg {
   max-width: 100%;
+}
+.backButton {
+  @include buttonPropaty;
+  background-color: $btnbackBgcolor;
+}
+.singelProdact {
+  margin-top: 10%;
+}
+.addToCartBox {
+  @extend .box;
+  margin-top: 20px;
+}
+.singelBox {
+  @extend .box;
+  box-shadow: none;
+  padding: 0;
+}
+.prodactPrice {
+  padding-bottom: 10px;
+  display: block;
 }
